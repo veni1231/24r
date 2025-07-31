@@ -1,0 +1,423 @@
+ <!DOCTYPE html>
+ <html>
+ <head>
+   <title>Application Form</title>
+   <style>
+     body {
+       font-family: Arial, sans-serif;
+       padding: 20px;
+     }
+     form {
+       max-width: 500px;
+       margin: auto;
+       border: 1px solid #ccc;
+       padding: 20x;
+       border-radius: 10px;
+     }
+     label {
+       display: block;
+       margin-top: 10px;
+     }
+     input, textarea, select {
+       width: 100%;
+       padding: 8px;
+       margin-top: 5px;
+       border-radius: 5px;
+       border: 1px solid #ccc;
+     }
+     button {
+       margin-top: 15px;
+       padding: 10px;
+       background-color: #007bff;
+       color: white;
+       border: none;
+       border-radius: 5px;
+       cursor: pointer;
+    }
+    button:hover {
+      background-color: #0056b3;
+    }
+   </style>
+</head>
+<body>
+  <h2>Application form</h2>
+
+  <form action="#" method="post">
+    <label for="name">First Name:</label>
+    <input type="text" id="name" name="name" required>
+    <label for="name">Last Name:</label>
+    <input type="text" id="name" name="name" required>
+
+    <label for="email">Email Address:</label>
+    <input type="email" id="email" name="email" required>
+
+    <label for="dob">Date of Birth:</label>
+    <input type="date" id="dob" name="dob" required>
+
+    <label for="age">Age:</label>
+    <input type="number" id="age" name="age" min="0">
+    
+
+
+    <label>Gender:</label>
+    <input type="radio" id="male" name="gender" value="Male">Male
+    <input type="radio" id="female" name="gender" value="Female"> Female
+    <input type="radio" id="other" name="gender" value="other"> Other
+    
+
+    <label for="address">Address:</label>
+    <textarea id="address" name="address" rows="4" required></textarea>
+   
+
+    <label for="course">Course Applying For:</label>
+    <select id="course" name="course">
+      <option value="B.Sc">B.Sc</option>
+      <option value="MCA">MCA</option>
+      <option value="B.tech"><B.tech</option>
+      <option value="Msc">Msc</option>
+
+      <h1>Open Job Positions</h1>
+  <ul class="job-list">
+    <li class="job-item">
+      <div class="job-title">Junior Frontend Developer</div>
+      <div class="job-location">Location: Remote</div>
+    </li>
+    <li class="job-item">
+      <div class="job-title">UI/UX Designer</div>
+      <div class="job-location">Location: New York, NY</div>
+    </li>
+    <li class="job-item">
+      <div class="job-title">Backend Developer (Node.js)</div>
+      <div class="job-location">Location: Berlin, Germany</div>
+    </li>
+  </ul>
+   <h1>Popular Programming Languages</h1>
+  <ul>
+    <li>Python</li>
+    <li>JavaScript</li>
+    <li>Java</li>
+    <li>C++</li>
+    <li>Ruby</li>
+    <li>Go</li>
+    <li>Rust</li>
+  </ul>
+
+</body>
+</html>
+✅ Option 2: Table Format
+html
+Copy
+Edit
+<table border="1">
+  <thead>
+    <tr>
+      <th>Language</th>
+      <th>Use Case</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Python</td>
+      <td>Data Science, Web Development, Automation</td>
+    </tr>
+    <tr>
+      <td>JavaScript</td>
+      <td>Web Development (Frontend & Backend)</td>
+    </tr>
+    <tr>
+      <td>C++</td>
+      <td>Game Development, High-Performance Apps</td>
+    </tr>
+  </tbody>
+</table>
+✅ Option 3: Styled Cards (CSS included)
+html
+Copy
+Edit
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Programming Languages</title>
+  <style>
+    .card {
+      border: 1px solid #ccc;
+      padding: 15px;
+      border-radius: 8px;
+      margin: 10px;
+      width: 200px;
+      display: inline-block;
+      vertical-align: top;
+      box-shadow: 2px 2px 5px rgba(0,0,0,0.1);
+    }
+    .card h2 {
+      margin: 0 0 10px;
+      font-size: 1.2em;
+    }
+    .container {
+      padding: 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <div class="card">
+      <h2>Python</h2>
+      <p>Used for data science, AI, and web development.</p>
+    </div>
+
+    <div class="card">
+      <h2>JavaScript</h2>
+      <p>Essential for web development (frontend & backend).</p>
+    </div>
+     <h2>Enter Your Password</h2>
+
+  <form>
+    <label for="pwd">Password:</label>
+    <input type="password" id="pwd" name="pwd" placeholder="Enter password" required />
+    <br><br>
+    <input type="submit" value="Submit" />
+  </form>
+
+    </select>
+    
+  
+
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Feedback Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            padding: 20px;
+        }
+        .container {
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 10px;
+            max-width: 500px;
+            margin: auto;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        h2 {
+            text-align: center;
+        }
+        label {
+            display: block;
+            margin: 15px 0 5px;
+        }
+        input[type="text"],
+        input[type="email"],
+        textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        textarea {
+            resize: vertical;
+            height: 100px;
+        }
+        input[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 15px;
+        }
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h2>Feedback Form</h2>
+    <form action="submit_form.php" method="post">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        <label for="pwd">Password:</label>
+        <input type="password" id="pwd" name="pwd" placeholder="Enter password" required />
+  <h2>Please Check All the Emotions That Apply to You</h2>
+
+  <form id="emotionForm" onsubmit="return handleSubmit(event)">
+    <label><input type="checkbox" name="emotions" value="Happy" /> Happy</label>
+    <label><input type="checkbox" name="emotions" value="Sad" /> Sad</label>
+    <label><input type="checkbox" name="emotions" value="Angry" /> Angry</label>
+    <label><input type="checkbox" name="emotions" value="Excited" /> Excited</label>
+    <label><input type="checkbox" name="emotions" value="Anxious" /> Anxious</label>
+    <label><input type="checkbox" name="emotions" value="Relaxed" /> Relaxed</label>
+    <label><input type="checkbox" name="emotions" value="Confused" /> Confused</label>
+    <label><input type="checkbox" name="emotions" value="Hopeful" /> Hopeful</label>
+
+  <h2>How satisfied were you with our service?</h2>
+
+  <form id="satisfactionForm" onsubmit="return handleSubmit(event)">
+    <label><input type="radio" name="satisfaction" value="Very Satisfied" required /> Very Satisfied</label>
+    <label><input type="radio" name="satisfaction" value="Satisfied" /> Satisfied</label>
+    <label><input type="radio" name="satisfaction" value="Neutral" /> Neutral</label>
+    <label><input type="radio" name="satisfaction" value="Dissatisfied" /> Dissatisfied</label>
+    <label><input type="radio" name="satisfaction" value="Very Dissatisfied" /> Very Dissatisfied</label>
+
+    <label for="comments">Further Comments:</label>
+    <textarea id="comments" name="comments" placeholder="Write your comments here..."></textarea>
+    <br />
+      <div class="bio-container">
+    <img src="https://via.placeholder.com/150" alt="Bio Photo" class="bio-photo" />
+    <div class="bio-text">
+     <h1>Select a Location You Have Visited</h1>
+
+  <label for="locations">Choose a location:</label>
+  <select id="locations" name="locations">
+    <option value="">--Please choose an option--</option>
+    <option value="Paris, France">Paris, France</option>
+    <option value="Tokyo, Japan">Tokyo, Japan</option>
+    <option value="New York, USA">New York, USA</option>
+    <option value="Sydney, Australia">Sydney, Australia</option>
+    <option value="Rome, Italy">Rome, Italy</option>
+  </select>
+
+        <input type="submit" value="Submit Feedback">
+    </form>
+</div>
+
+</body>
+</html>
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Contact Us Today</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f9f9f9;
+            padding: 40px;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: auto;
+            background-color: #ffffff;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            text-align: center;
+            color: #333333;
+        }
+
+        label {
+            display: block;
+            margin-top: 20px;
+            color: #555555;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        textarea {
+            width: 100%;
+            padding: 10px;
+            margin-top: 6px;
+            border: 1px solid #cccccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+
+        textarea {
+            resize: vertical;
+            height: 120px;
+        }
+
+        input[type="submit"] {
+            background-color: #007BFF;
+            color: white;
+            padding: 12px 20px;
+            margin-top: 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            width: 100%;
+            font-size: 16px;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+
+        .footer {
+            text-align: center;
+            margin-top: 30px;
+            color: #888;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <h2>Contact Us Today</h2>
+      <form>
+    <label for="fname">First Name:</label>
+    <input type="text" id="fname" name="firstname" required />
+
+    <label for="lname">Last Name:</label>
+    <input type="text" id="lname" name="lastname" required />
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required />
+
+    <label for="phone">Phone:</label>
+    <input type="tel" id="phone" name="phone" pattern="[0-9+\-\s()]{7,}" placeholder="e.g. +1 555 123 4567" />
+
+    <label for="address">Address:</label>
+    <input type="text" id="address" name="address" />
+
+    <label for="city">City:</label>
+    <input type="text" id="city" name="city" />
+
+    <label for="status">Status:</label>
+    <select id="status" name="status" required>
+      <option value="">-- Select Status --</option>
+      <option value="Individual">Individual</option>
+      <option value="Company">Company</option>
+      <option value="Non-profit">Non-profit</option>
+      <option value="Other">Other</option>
+    </select>
+
+    <label for="zip">Zip Code:</label>
+    <input type="text" id="zip" name="zipcode" pattern="\d{4,10}" placeholder="e.g. 12345" />
+
+    <label for="website">Website or Domain Name:</label>
+    <input type="text" id="website" name="website" placeholder="e.g. example.com" />
+
+    <label>Do you have hosting?</label>
+    <label><input type="radio" name="hosting" value="Yes" required /> Yes</label>
+    <label><input type="radio" name="hosting" value="No" /> No</label>
+
+    <label for="projectdesc">Project Description:</label>
+    <textarea id="projectdesc" name="projectdesc" placeholder="Tell us about your project..." required></textarea>
+
+    <button type="submit">Submit</button>
+  </form>
+
+</body>
+</html>
+
+
+
